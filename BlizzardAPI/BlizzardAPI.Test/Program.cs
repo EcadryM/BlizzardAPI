@@ -17,6 +17,7 @@ namespace BlizzardAPI.Test
             var hunterPets = character.HunterPets();
             var pets = character.Pets();
             var petSlots = character.PetSlots();
+            var professions = character.Professions();
         }
     }
 }

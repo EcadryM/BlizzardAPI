@@ -13,7 +13,8 @@ namespace WowAPI.Character
                 $"https://{region}.api.battle.net/wow/character/{realm}/{name}?fields=petSlots&locale={locale}&apikey={ApiHandler.ApiKey}"
             );
 
-            if (petSlotsData == null || petSlotsData["petSlots"] == null) return;
+            if (petSlotsData == null || petSlotsData["petSlots"] == null)
+                return;
             
             for (var i = 0; i < (petSlotsData["petSlots"] as JArray).Count; i++)
             {

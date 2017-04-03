@@ -16,12 +16,17 @@ namespace WowAPI.Character
 
         private object CreateNewInstance(Type type, string name)
         {
-            return ApiHelper.CreateNewInstance(type, new object[] { name, realm, region, locale });
+            return ApiHelper.CreateNewInstance(type, new object[] { this.name, realm, region, locale });
         }
 
         public Profile Profile()
         {
             return CreateNewInstance(typeof(Profile), "profile") as Profile;
+        }
+
+        public Achievements Achievements()
+        {
+            return CreateNewInstance(typeof(Achievements), "achievements") as Achievements;
         }
     }
 }

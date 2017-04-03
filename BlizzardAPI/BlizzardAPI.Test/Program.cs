@@ -11,6 +11,7 @@ namespace BlizzardAPI.Test
 
             var character = api.Character("Siege", "Silvermoon", "eu", "en_GB");
             var profile = character.Profile();
+            var achievements = character.Achievements();
         }
     }
 }

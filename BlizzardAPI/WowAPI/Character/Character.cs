@@ -43,5 +43,15 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(Mounts), "mounts") as Mounts;
         }
+
+        public HunterPets HunterPets()
+        {
+            return CreateNewInstance(typeof(HunterPets), "hunterpets") as HunterPets;
+        }
+
+        public Pets Pets()
+        {
+            return CreateNewInstance(typeof(Pets), "pets") as Pets;
+        }
     }
 }

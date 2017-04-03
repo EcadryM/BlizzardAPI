@@ -14,6 +14,8 @@ namespace BlizzardAPI.Test
             var appearance = character.Appearance();
             var guild = character.Guild();
             var mounts = character.Mounts();
+            var hunterPets = character.HunterPets();
+            var pets = character.Pets();
         }
     }
 }

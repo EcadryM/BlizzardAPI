@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Character\Achievements.cs" />
     <Compile Include="Character\Appearance.cs" />
+    <Compile Include="Character\Bracket.cs" />
     <Compile Include="Character\Emblem.cs" />
     <Compile Include="Character\Guild.cs" />
     <Compile Include="Character\HunterPet.cs" />
@@ -54,6 +55,10 @@
     <Compile Include="Character\Profession.cs" />
     <Compile Include="Character\Professions.cs" />
     <Compile Include="Character\Profile.cs" />
+    <Compile Include="Character\PvP.cs" />
+    <Compile Include="Character\Quests.cs" />
+    <Compile Include="Character\Reputation.cs" />
+    <Compile Include="Character\ReputationInfo.cs" />
     <Compile Include="Character\Slot.cs" />
     <Compile Include="Character\Spec.cs" />
     <Compile Include="Mounts\MountInfo.cs" />

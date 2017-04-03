@@ -44,7 +44,10 @@
     <Compile Include="Character\Appearance.cs" />
     <Compile Include="Character\Emblem.cs" />
     <Compile Include="Character\Guild.cs" />
+    <Compile Include="Character\HunterPet.cs" />
+    <Compile Include="Character\HunterPets.cs" />
     <Compile Include="Character\Profile.cs" />
+    <Compile Include="Character\Spec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

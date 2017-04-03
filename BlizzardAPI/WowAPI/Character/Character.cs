@@ -33,5 +33,10 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(Appearance), "appearance") as Appearance;
         }
+
+        public Guild Guild()
+        {
+            return CreateNewInstance(typeof(Guild), "guild") as Guild;
+        }
     }
 }

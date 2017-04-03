@@ -1,5 +1,4 @@
-﻿using System;
-using WowAPI;
+﻿using WowAPI;
 
 namespace BlizzardAPI.Test
 {
@@ -13,6 +12,7 @@ namespace BlizzardAPI.Test
             var profile = character.Profile();
             var achievements = character.Achievements();
             var appearance = character.Appearance();
+            var guild = character.Guild();
         }
     }
 }

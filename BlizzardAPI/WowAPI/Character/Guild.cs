@@ -12,7 +12,34 @@
 
         public Guild(string name, string realm, string region, string locale)
         {
-            // TODO: Get the JSON file from the URL of the api request and initialize the properties with json objects values.
+            var guildData = ApiHelper.GetJsonFromUrl(
+               $"https://{region}.api.battle.net/wow/character/{realm}/{name}?fields=guild&locale={locale}&apikey={ApiHandler.ApiKey}"
+           );
+
+            if (guildData == null)
+                return;
+
+            if (guildData.guild != null)
+            {
+                Name = guildData.guild["name"];
+                Realm = guildData.guild["realm"];
+                BattleGroup = guildData.guild["battlegroup"];
+                Members = guildData.guild["members"];
+                AchievementPoints = guildData.guild["achievementPoints"];
+
+                Emblem = new Emblem
+                {
+                    Icon = guildData.guild.emblem["icon"],
+                    IconColorId = guildData.guild.emblem["iconColorId"],
+                    Border = guildData.guild.emblem["border"],
+                    BorderColorId = guildData.guild.emblem["borderColorId"],
+                    BackgroundColorId = guildData.guild.emblem["backgroundColorId"],
+
+                    IconColor = guildData.guild.emblem["iconColor"],
+                    BorderColor = guildData.guild.emblem["borderColor"],
+                    BackgroundColor = guildData.guild.emblem["backgroundColor"]
+                };
+            }
         }
     }
 }

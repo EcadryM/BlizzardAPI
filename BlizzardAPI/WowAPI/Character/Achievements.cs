@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace WowAPI.Character
+﻿namespace WowAPI.Character
 {
     class Achievements
     {

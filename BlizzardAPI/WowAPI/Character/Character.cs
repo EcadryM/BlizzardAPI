@@ -68,5 +68,15 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(PvP), "pvp") as PvP;
         }
+
+        public Quests Quests()
+        {
+            return CreateNewInstance(typeof(Quests), "quests") as Quests;
+        }
+
+        public Reputation Reputation()
+        {
+            return CreateNewInstance(typeof(Reputation), "reputation") as Reputation;
+        }
     }
 }

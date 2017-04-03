@@ -6,7 +6,14 @@
 
         public Quests(string name, string realm, string region, string locale)
         {
-            // TODO: Get the JSON file from the URL of the api request and initialize the properties with json objects values.
+            var questsData = ApiHelper.GetJsonFromUrl(
+                $"https://{region}.api.battle.net/wow/character/{realm}/{name}?fields=quests&locale={locale}&apikey={ApiHandler.ApiKey}"
+            );
+
+            if (questsData == null)
+                return;
+
+            CharacterQuests = questsData["quests"].ToObject<int[]>();
         }
     }
 }

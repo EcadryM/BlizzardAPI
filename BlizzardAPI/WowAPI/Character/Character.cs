@@ -83,5 +83,10 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(Stats), "stats") as Stats;
         }
+
+        public Titles Titles()
+        {
+            return CreateNewInstance(typeof(Titles), "titles") as Titles;
+        }
     }
 }

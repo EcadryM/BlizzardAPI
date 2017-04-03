@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 
 namespace WowAPI.Character
 {
@@ -8,7 +9,21 @@ namespace WowAPI.Character
 
         public Titles(string name, string realm, string region, string locale)
         {
-            // TODO: Get the JSON file from the URL of the api request and initialize the properties with json objects values.
+            var titlesData = ApiHelper.GetJsonFromUrl(
+                $"https://{region}.api.battle.net/wow/character/{realm}/{name}?fields=titles&locale={locale}&apikey={ApiHandler.ApiKey}"
+            );
+
+            if (titlesData == null || titlesData["titles"] == null)
+                return;
+
+            for (var i = 0; i < (titlesData["titles"] as JArray).Count; i++)
+            {
+                titles.Add(new Title
+                {
+                    Id = titlesData["titles"][i]["id"],
+                    Name = titlesData["titles"][i]["name"]
+                });
+            }
         }
     }
 }

@@ -22,6 +22,7 @@ namespace BlizzardAPI.Test
             var quests = character.Quests();
             var reputation = character.Reputation();
             var stats = character.Stats();
+            var titles = character.Titles();
         }
     }
 }

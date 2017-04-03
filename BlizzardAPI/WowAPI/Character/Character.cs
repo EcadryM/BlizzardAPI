@@ -53,5 +53,10 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(Pets), "pets") as Pets;
         }
+
+        public PetSlots PetSlots()
+        {
+            return CreateNewInstance(typeof(PetSlots), "petslots") as PetSlots;
+        }
     }
 }

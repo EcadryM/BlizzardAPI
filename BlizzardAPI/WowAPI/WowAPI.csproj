@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Character\Achievements.cs" />
     <Compile Include="Character\Appearance.cs" />
+    <Compile Include="Character\Emblem.cs" />
+    <Compile Include="Character\Guild.cs" />
     <Compile Include="Character\Profile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

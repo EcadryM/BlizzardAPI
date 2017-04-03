@@ -1,6 +1,6 @@
 ﻿namespace WowAPI.Character
 {
-    class Profile
+    public class Profile
     {
         public long LastModified { get; set; }
 

@@ -1,6 +1,6 @@
 ﻿namespace WowAPI.Character
 {
-    class Appearance
+    public class Appearance
     {
         public int FaceVariation { get; set; }
         public int SkinColor { get; set; }
@@ -11,7 +11,7 @@
         public bool ShowHelm { get; set; }
         public bool ShowCloak { get; set; }
 
-        public int[] pCustomDisplayOptions { get; set; }
+        public int[] CustomDisplayOptions { get; set; }
 
         public Appearance(string name, string realm, string region, string locale)
         {

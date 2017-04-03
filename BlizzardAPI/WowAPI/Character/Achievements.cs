@@ -1,6 +1,6 @@
 ﻿namespace WowAPI.Character
 {
-    class Achievements
+    public class Achievements
     {
         public int[] AchievementsCompleted { get; set; }
         public int[] Criteria { get; set; }

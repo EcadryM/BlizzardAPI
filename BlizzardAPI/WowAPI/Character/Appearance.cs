@@ -15,7 +15,21 @@
 
         public Appearance(string name, string realm, string region, string locale)
         {
-            // TODO: Get the JSON file from the URL of the api request and initialize the properties with json objects values.
+            var appearanceData = ApiHelper.GetJsonFromUrl(
+                $"https://{region}.api.battle.net/wow/character/{realm}/{name}?fields=appearance&locale={locale}&apikey={ApiHandler.ApiKey}"
+            );
+
+            if (appearanceData == null)
+                return;
+
+            FaceVariation = appearanceData.appearance["faceVariation"];
+            SkinColor = appearanceData.appearance["skinColor"];
+            HairVariation = appearanceData.appearance["hairVariation"];
+            HairColor = appearanceData.appearance["hairColor"];
+            FeatureVariation = appearanceData.appearance["featureVariation"];
+            ShowHelm = appearanceData.appearance["showHelm"];
+            ShowCloak = appearanceData.appearance["showCloak"];
+            CustomDisplayOptions = appearanceData.appearance["customDisplayOptions"].ToObject<int[]>();
         }
     }
 }

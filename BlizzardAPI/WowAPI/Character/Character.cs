@@ -28,5 +28,10 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(Achievements), "achievements") as Achievements;
         }
+
+        public Appearance Appearance()
+        {
+            return CreateNewInstance(typeof(Appearance), "appearance") as Appearance;
+        }
     }
 }

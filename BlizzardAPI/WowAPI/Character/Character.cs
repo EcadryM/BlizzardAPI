@@ -63,5 +63,10 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(Professions), "professions") as Professions;
         }
+
+        public PvP PvP()
+        {
+            return CreateNewInstance(typeof(PvP), "pvp") as PvP;
+        }
     }
 }

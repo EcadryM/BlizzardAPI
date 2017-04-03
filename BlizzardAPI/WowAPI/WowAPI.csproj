@@ -62,6 +62,8 @@
     <Compile Include="Character\Slot.cs" />
     <Compile Include="Character\Spec.cs" />
     <Compile Include="Character\Stats.cs" />
+    <Compile Include="Character\Title.cs" />
+    <Compile Include="Character\Titles.cs" />
     <Compile Include="Mounts\MountInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

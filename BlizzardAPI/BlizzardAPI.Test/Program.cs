@@ -21,6 +21,7 @@ namespace BlizzardAPI.Test
             var pvp = character.PvP();
             var quests = character.Quests();
             var reputation = character.Reputation();
+            var stats = character.Stats();
         }
     }
 }

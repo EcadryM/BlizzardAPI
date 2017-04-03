@@ -55,7 +55,61 @@
 
         public Stats(string name, string realm, string region, string locale)
         {
-            // TODO: Get the JSON file from the URL of the api request and initialize the properties with json objects values.
+            var statsData = ApiHelper.GetJsonFromUrl(
+                $"https://{region}.api.battle.net/wow/character/{realm}/{name}?fields=stats&locale={locale}&apikey={ApiHandler.ApiKey}"
+            );
+
+            if (statsData == null)
+                return;
+
+            Health = statsData["stats"]["health"];
+            Power = statsData["stats"]["power"];
+            Str = statsData["stats"]["str"];
+            Agi = statsData["stats"]["agi"];
+            Int = statsData["stats"]["int"];
+            Sta = statsData["stats"]["sta"];
+            SpeedRating = statsData["stats"]["speedRating"];
+            SpeedRatingBonus = statsData["stats"]["speedRatingBonus"];
+            Crit = statsData["stats"]["crit"];
+            CritRating = statsData["stats"]["critRating"];
+            Haste = statsData["stats"]["haste"];
+            HasteRating = statsData["stats"]["hasteRating"];
+            HasteRatingPercent = statsData["stats"]["hasteRatingPercent"];
+            Mastery = statsData["stats"]["mastery"];
+            MasteryRating = statsData["stats"]["masteryRating"];
+            Leech = statsData["stats"]["leech"];
+            LeechRating = statsData["stats"]["leechRating"];
+            LeechRatingBonus = statsData["stats"]["leechRatingBonus"];
+            Versatility = statsData["stats"]["versatility"];
+            VersatilityDamageDoneBonus = statsData["stats"]["versatilityDamageDoneBonus"];
+            VersatilityHealingDoneBonus = statsData["stats"]["versatilityHealingDoneBonus"];
+            VersatilityDamageTakenBonus = statsData["stats"]["versatilityDamageTakenBonus"];
+            AvoidanceRating = statsData["stats"]["avoidanceRating"];
+            AvoidanceRatingBonus = statsData["stats"]["avoidanceRatingBonus"];
+            SpellPen = statsData["stats"]["spellPen"];
+            SpellCrit = statsData["stats"]["spellCrit"];
+            SpellCritRating = statsData["stats"]["spellCritRating"];
+            Mana5 = statsData["stats"]["mana5"];
+            Mana5Combat = statsData["stats"]["mana5Combat"];
+            Armor = statsData["stats"]["armor"];
+            Dodge = statsData["stats"]["dodge"];
+            DodgeRating = statsData["stats"]["dodgeRating"];
+            Parry = statsData["stats"]["parry"];
+            ParryRating = statsData["stats"]["parryRating"];
+            Block = statsData["stats"]["block"];
+            BlockRating = statsData["stats"]["blockRating"];
+            MainHandDmgMin = statsData["stats"]["mainHandDmgMin"];
+            MainHandDmgMax = statsData["stats"]["mainHandDmgMax"];
+            MainHandSpeed = statsData["stats"]["mainHandSpeed"];
+            MainHandDps = statsData["stats"]["mainHandDps"];
+            OffHandDmgMin = statsData["stats"]["offHandDmgMin"];
+            OffHandDmgMax = statsData["stats"]["offHandDmgMax"];
+            OffHandSpeed = statsData["stats"]["offHandSpeed"];
+            OffHandDps = statsData["stats"]["offHandDps"];
+            RangedDmgMin = statsData["stats"]["rangedDmgMin"];
+            RangedDmgMax = statsData["stats"]["rangedDmgMax"];
+            RangedSpeed = statsData["stats"]["rangedSpeed"];
+            RangedDps = statsData["stats"]["rangedDps"];
         }
     }
 }

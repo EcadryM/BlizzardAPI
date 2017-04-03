@@ -38,5 +38,10 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(Guild), "guild") as Guild;
         }
+
+        public Mounts Mounts()
+        {
+            return CreateNewInstance(typeof(Mounts), "mounts") as Mounts;
+        }
     }
 }

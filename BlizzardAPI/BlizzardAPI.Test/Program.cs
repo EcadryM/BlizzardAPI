@@ -13,6 +13,7 @@ namespace BlizzardAPI.Test
             var achievements = character.Achievements();
             var appearance = character.Appearance();
             var guild = character.Guild();
+            var mounts = character.Mounts();
         }
     }
 }

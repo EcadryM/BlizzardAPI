@@ -1,4 +1,6 @@
-﻿namespace WowAPI.Character
+﻿using System.Text.RegularExpressions;
+
+namespace WowAPI.Character
 {
     public class Profile
     {
@@ -21,7 +23,32 @@
 
         public Profile(string name, string realm, string region, string locale)
         {
-            // TODO: Get the JSON file from the URL of the api request and initialize the properties with json objects values.
+            var profileData = ApiHelper.GetJsonFromUrl(
+                $"https://{region}.api.battle.net/wow/character/{realm}/{name}?locale={locale}&apikey={ApiHandler.ApiKey}"
+            );
+
+            if (profileData == null) return;
+
+            LastModified = profileData["lastModified"];
+
+            Class = profileData["class"];
+            Race = profileData["race"];
+            Gender = profileData["gender"];
+            Level = profileData["level"];
+            AchievementPoints = profileData["achievementPoints"];
+            Faction = profileData["faction"];
+            TotalHonorableKills = profileData["totalHonorableKills"];
+
+            Name = profileData["name"];
+            Realm = profileData["realm"];
+
+            BattleGroup = profileData["battlegroup"];
+
+            var url = Regex.Match((string)profileData["thumbnail"], ".+-");
+
+            Avatar = $"http://render-{region}.worldofwarcraft.com/character/{url}avatar.jpg";
+            Inset = $"http://render-{region}.worldofwarcraft.com/character/{url}inset.jpg";
+            ProfileMain = $"http://render-{region}.worldofwarcraft.com/character/{url}profilemain.jpg";
         }
     }
 }

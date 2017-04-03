@@ -1,6 +1,6 @@
 ﻿namespace WowAPI.Character
 {
-    class HunterPet
+    public class HunterPet
     {
         public int Creature { get; set; }
         public int Slot { get; set; }

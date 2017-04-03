@@ -3,7 +3,7 @@ using WowAPI.Mounts;
 
 namespace WowAPI.Character
 {
-    class Mounts
+    public class Mounts
     {
         public int NumCollected { get; set; }
         public int NumNotCollected { get; set; }

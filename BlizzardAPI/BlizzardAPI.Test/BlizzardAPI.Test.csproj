@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WowAPI\WowAPI.csproj">
+      <Project>{f4e09132-2b1e-4b26-b2a3-c12ffbd9ffe0}</Project>
+      <Name>WowAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

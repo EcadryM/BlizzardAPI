@@ -2,7 +2,7 @@
 
 namespace WowAPI.Character
 {
-    class Reputation
+    public class Reputation
     {
         public List<ReputationInfo> reputation = new List<ReputationInfo>();
 

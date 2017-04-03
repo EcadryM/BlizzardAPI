@@ -2,7 +2,7 @@
 
 namespace WowAPI.Character
 {
-    class HunterPets
+    public class HunterPets
     {
         public List<HunterPet> hunterPets = new List<HunterPet>();
 

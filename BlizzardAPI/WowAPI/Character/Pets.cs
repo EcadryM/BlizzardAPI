@@ -2,7 +2,7 @@
 
 namespace WowAPI.Character
 {
-    class Pets
+    public class Pets
     {
         public int NumCollected { get; set; }
         public int NumNotCollected { get; set; }

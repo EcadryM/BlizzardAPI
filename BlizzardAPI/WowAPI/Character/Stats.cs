@@ -6,7 +6,7 @@
 
         public int Health { get; set; }
         public int Power { get; set; }
-        public int Str { get; set }
+        public int Str { get; set; }
         public int Agi { get; set; }
         public int Int { get; set; }
         public int Sta { get; set; }

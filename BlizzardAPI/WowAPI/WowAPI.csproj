@@ -49,8 +49,12 @@
     <Compile Include="Character\Mounts.cs" />
     <Compile Include="Character\Pet.cs" />
     <Compile Include="Character\Pets.cs" />
+    <Compile Include="Character\PetSlots.cs" />
     <Compile Include="Character\PetStats.cs" />
+    <Compile Include="Character\Profession.cs" />
+    <Compile Include="Character\Professions.cs" />
     <Compile Include="Character\Profile.cs" />
+    <Compile Include="Character\Slot.cs" />
     <Compile Include="Character\Spec.cs" />
     <Compile Include="Mounts\MountInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

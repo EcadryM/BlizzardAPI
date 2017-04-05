@@ -76,6 +76,9 @@
     <Compile Include="Mounts\MountInfo.cs" />
     <Compile Include="Mounts\Mounts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PvP\LeaderboardRow.cs" />
+    <Compile Include="PvP\Leaderboards.cs" />
+    <Compile Include="Quest\Quest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

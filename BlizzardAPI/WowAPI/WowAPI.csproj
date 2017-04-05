@@ -74,6 +74,7 @@
     <Compile Include="Character\Title.cs" />
     <Compile Include="Character\Titles.cs" />
     <Compile Include="Mounts\MountInfo.cs" />
+    <Compile Include="Mounts\Mounts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

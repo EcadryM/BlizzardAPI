@@ -5,7 +5,8 @@ namespace WowAPI.Character
 {
     public class Reputation
     {
-        public List<ReputationInfo> reputation = new List<ReputationInfo>();
+        private List<ReputationInfo> reputation = new List<ReputationInfo>();
+        public List<ReputationInfo> CharacterReputation { get => reputation; set => reputation = value; }
 
         public Reputation(string name, string realm, string region, string locale)
         {
@@ -18,7 +19,7 @@ namespace WowAPI.Character
 
             for (var i = 0; i < (reputationData["reputation"] as JArray).Count; i++)
             {
-                reputation.Add(new ReputationInfo
+                CharacterReputation.Add(new ReputationInfo
                 {
                     Name = reputationData["reputation"][i]["name"],
                     Id = reputationData["reputation"][i]["id"],

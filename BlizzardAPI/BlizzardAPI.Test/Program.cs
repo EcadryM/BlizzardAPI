@@ -23,6 +23,7 @@ namespace BlizzardAPI.Test
             var reputation = character.Reputation();
             var stats = character.Stats();
             var titles = character.Titles();
+            var progression = character.Progression();
         }
     }
 }

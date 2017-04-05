@@ -4,7 +4,8 @@ namespace WowAPI.Character
 {
     public class PvP
     {
-        public List<Bracket> brackets = new List<Bracket>();
+        private List<Bracket> brackets = new List<Bracket>();
+        public List<Bracket> Brackets { get => brackets; set => brackets = value; }
 
         public PvP(string name, string realm, string region, string locale)
         {
@@ -17,7 +18,7 @@ namespace WowAPI.Character
 
             foreach (var bracket in pvpData["pvp"]["brackets"].Children())
             {
-                brackets.Add(new Bracket
+                Brackets.Add(new Bracket
                 {
                     Slug = bracket.First["slug"],
                     WeeklyPlayed = bracket.First["weeklyPlayed"],

@@ -13,5 +13,10 @@
         {
             return new Character.Character(name, realm, region, locale);
         }
+
+        public Mounts.Mounts Mounts(string region, string locale)
+        {
+            return new Mounts.Mounts(region, locale);
+        }
     }
 }

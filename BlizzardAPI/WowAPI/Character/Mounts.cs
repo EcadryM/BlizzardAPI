@@ -8,8 +8,9 @@ namespace WowAPI.Character
     {
         public int NumCollected { get; set; }
         public int NumNotCollected { get; set; }
+        public List<MountInfo> Collected { get => collected; set => collected = value; }
 
-        public List<MountInfo> collected = new List<MountInfo>();
+        private List<MountInfo> collected = new List<MountInfo>();
 
         public Mounts(string name, string realm, string region, string locale)
         {
@@ -25,7 +26,7 @@ namespace WowAPI.Character
 
             for (var i = 0; i < (mountsData.mounts["collected"] as JArray).Count; i++)
             {
-                collected.Add(new MountInfo
+                Collected.Add(new MountInfo
                 {
                     Name = mountsData.mounts["collected"][i]["name"],
                     Icon = mountsData.mounts["collected"][i]["icon"],

@@ -5,8 +5,11 @@ namespace WowAPI.Character
 {
     public class Professions
     {
-        public List<Profession> primary = new List<Profession>();
-        public List<Profession> secondary = new List<Profession>();
+        private List<Profession> primary = new List<Profession>();
+        private List<Profession> secondary = new List<Profession>();
+
+        public List<Profession> Primary { get => primary; set => primary = value; }
+        public List<Profession> Secondary { get => secondary; set => secondary = value; }
 
         public Professions(string name, string realm, string region, string locale)
         {
@@ -20,7 +23,7 @@ namespace WowAPI.Character
 
             for (var i = 0; i < (professionsData["professions"]["primary"] as JArray).Count; i++)
             {
-                primary.Add(new Profession
+                Primary.Add(new Profession
                 {
                     Id = professionsData["professions"]["primary"][i]["id"],
                     Rank = professionsData["professions"]["primary"][i]["rank"],
@@ -33,7 +36,7 @@ namespace WowAPI.Character
 
             for (var i = 0; i < (professionsData["professions"]["secondary"] as JArray).Count; i++)
             {
-                secondary.Add(new Profession
+                Secondary.Add(new Profession
                 {
                     Id = professionsData["professions"]["secondary"][i]["id"],
                     Rank = professionsData["professions"]["secondary"][i]["rank"],

@@ -7,8 +7,9 @@ namespace WowAPI.Character
     {
         public int NumCollected { get; set; }
         public int NumNotCollected { get; set; }
+        public List<Pet> Collected { get => collected; set => collected = value; }
 
-        public List<Pet> collected = new List<Pet>();
+        private List<Pet> collected = new List<Pet>();
 
         public Pets(string name, string realm, string region, string locale)
         {
@@ -24,7 +25,7 @@ namespace WowAPI.Character
 
             for (var i = 0; i < (petsData.pets["collected"] as JArray).Count; i++)
             {
-                collected.Add(new Pet
+                Collected.Add(new Pet
                 {
                     Name = petsData.pets["collected"][i]["name"],
                     Icon = petsData.pets["collected"][i]["icon"],

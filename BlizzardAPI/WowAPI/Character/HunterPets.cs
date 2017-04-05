@@ -5,7 +5,8 @@ namespace WowAPI.Character
 {
     public class HunterPets
     {
-        public List<HunterPet> hunterPets = new List<HunterPet>();
+        private List<HunterPet> hunterPets = new List<HunterPet>();
+        public List<HunterPet> CharacterHunterPets { get => hunterPets; set => hunterPets = value; }
 
         public HunterPets(string name, string realm, string region, string locale)
         {
@@ -17,7 +18,7 @@ namespace WowAPI.Character
                 return;
             for (var i = 0; i < (hunterPetsData["hunterPets"] as JArray).Count; i++)
             {
-                hunterPets.Add(new HunterPet
+                CharacterHunterPets.Add(new HunterPet
                 {
                     Creature = hunterPetsData["hunterPets"][i]["creature"],
                     Slot = hunterPetsData["hunterPets"][i]["slot"],

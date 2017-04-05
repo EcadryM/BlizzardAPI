@@ -13,7 +13,7 @@ namespace BlizzardAPI.Test
             var achievements = character.Achievements();
             var appearance = character.Appearance();
             var guild = character.Guild();
-            var mounts = character.Mounts();
+            var characterMounts = character.Mounts();
             var hunterPets = character.HunterPets();
             var pets = character.Pets();
             var petSlots = character.PetSlots();
@@ -23,6 +23,9 @@ namespace BlizzardAPI.Test
             var reputation = character.Reputation();
             var stats = character.Stats();
             var titles = character.Titles();
+            var progression = character.Progression();
+
+            var mounts = api.Mounts("us", "en_US");
         }
     }
 }

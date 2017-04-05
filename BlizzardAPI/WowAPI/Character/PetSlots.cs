@@ -5,7 +5,8 @@ namespace WowAPI.Character
 {
     public class PetSlots
     {
-        public List<Slot> petSlots = new List<Slot>();
+        private List<Slot> petSlots = new List<Slot>();
+        public List<Slot> CharacterPetSlots { get => petSlots; set => petSlots = value; }
 
         public PetSlots(string name, string realm, string region, string locale)
         {
@@ -18,7 +19,7 @@ namespace WowAPI.Character
             
             for (var i = 0; i < (petSlotsData["petSlots"] as JArray).Count; i++)
             {
-                petSlots.Add(new Slot
+                CharacterPetSlots.Add(new Slot
                 {
                     PetSlot = petSlotsData["petSlots"][i]["slot"],
                     BattlePetGuid = petSlotsData["petSlots"][i]["battlePetGuid"],

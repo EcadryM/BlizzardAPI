@@ -88,5 +88,10 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(Titles), "titles") as Titles;
         }
+
+        public Progression Progression()
+        {
+            return CreateNewInstance(typeof(Progression), "progression") as Progression;
+        }
     }
 }

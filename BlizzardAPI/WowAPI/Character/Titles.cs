@@ -5,7 +5,8 @@ namespace WowAPI.Character
 {
     public class Titles
     {
-        public List<Title> titles = new List<Title>();
+        private List<Title> titles = new List<Title>();
+        public List<Title> CharacterTitles { get => titles; set => titles = value; }
 
         public Titles(string name, string realm, string region, string locale)
         {
@@ -18,7 +19,7 @@ namespace WowAPI.Character
 
             for (var i = 0; i < (titlesData["titles"] as JArray).Count; i++)
             {
-                titles.Add(new Title
+                CharacterTitles.Add(new Title
                 {
                     Id = titlesData["titles"][i]["id"],
                     Name = titlesData["titles"][i]["name"]

@@ -5,9 +5,9 @@
         public string Name { get; set; }
 
         public int Id { get; set; }
-        public int? NormalKills { get; set; }
-        public int? NormalTimestamp { get; set; }
-        public int? HeroicKills { get; set; }
-        public int? HeroicTimestamp { get; set; }
+        public long? NormalKills { get; set; }
+        public long? NormalTimestamp { get; set; }
+        public long? HeroicKills { get; set; }
+        public long? HeroicTimestamp { get; set; }
     }
 }

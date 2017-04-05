@@ -6,9 +6,9 @@ namespace BlizzardAPI.Test
     {
         static void Main(string[] args)
         {
-            var api = new ApiHandler("Enter your api key here");
+            var api = new ApiHandler("haj9jgf5zjqy79se4nfkv7258wzhvfw6");
 
-            var character = api.Character("Siege", "Silvermoon", "eu", "en_GB");
+            var character = api.Character("Øracle", "Silvermoon", "us", "en_US");
             var profile = character.Profile();
             var achievements = character.Achievements();
             var appearance = character.Appearance();

@@ -18,5 +18,15 @@
         {
             return new Mounts.Mounts(region, locale);
         }
+
+        public PvP.Leaderboards Leaderboards(string bracketSlug, string region, string locale)
+        {
+            return new PvP.Leaderboards(bracketSlug, region, locale);
+        }
+
+        public Quest.Quest Quest(string questId, string region, string locale)
+        {
+            return new Quest.Quest(questId, region, locale);
+        }
     }
 }

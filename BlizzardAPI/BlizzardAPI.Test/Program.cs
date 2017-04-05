@@ -26,6 +26,10 @@ namespace BlizzardAPI.Test
             var progression = character.Progression();
 
             var mounts = api.Mounts("us", "en_US");
+
+            var leaderboards = api.Leaderboards("3v3", "us", "en_US");
+
+            var quest = api.Quest("8625", "us", "en_US");
         }
     }
 }

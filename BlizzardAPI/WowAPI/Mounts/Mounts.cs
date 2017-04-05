@@ -17,7 +17,7 @@ namespace WowAPI.Mounts
             if (mountsData == null)
                 return;
 
-            for (var i = 0; i < ((JArray)mountsData["mounts"]).Count; i++)
+            for (var i = 0; i < (mountsData["mounts"] as JArray).Count; i++)
             {
                 MountsList.Add(new MountInfo
                 {

@@ -28,5 +28,10 @@
         {
             return new Quest.Quest(questId, region, locale);
         }
+
+        public Realms.Realms Realms(string region, string locale)
+        {
+            return new Realms.Realms(region, locale);
+        }
     }
 }

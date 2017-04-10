@@ -79,6 +79,7 @@
     <Compile Include="PvP\LeaderboardRow.cs" />
     <Compile Include="PvP\Leaderboards.cs" />
     <Compile Include="Quest\Quest.cs" />
+    <Compile Include="Recipes\Recipe.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

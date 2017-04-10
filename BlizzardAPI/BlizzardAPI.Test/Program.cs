@@ -30,6 +30,8 @@ namespace BlizzardAPI.Test
             var leaderboards = api.Leaderboards("3v3", "us", "en_US");
 
             var quest = api.Quest("8625", "us", "en_US");
+
+            var recipe = api.Recipe("33994", "us", "en_US");
         }
     }
 }

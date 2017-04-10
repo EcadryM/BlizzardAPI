@@ -28,5 +28,10 @@
         {
             return new Quest.Quest(questId, region, locale);
         }
+
+        public Recipes.Recipe Recipe(string recipeId, string region, string locale)
+        {
+            return new Recipes.Recipe(recipeId, region, locale);
+        }
     }
 }

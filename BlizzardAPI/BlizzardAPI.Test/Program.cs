@@ -32,6 +32,10 @@ namespace BlizzardAPI.Test
             var quest = api.Quest("8625", "us", "en_US");
 
             var recipe = api.Recipe("33994", "us", "en_US");
+
+            var battlegroups = api.Battlegroups("us", "en_US");
+            var races = api.Races("us", "en_US");
+            var classes = api.Classes("us", "en_US");
         }
     }
 }

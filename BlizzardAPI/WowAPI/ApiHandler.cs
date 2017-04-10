@@ -33,5 +33,20 @@
         {
             return new Recipes.Recipe(recipeId, region, locale);
         }
+
+        public DataResources.Battlegroups Battlegroups(string region, string locale)
+        {
+            return new DataResources.Battlegroups(region, locale);
+        }
+
+        public DataResources.CharacterRaces Races(string region, string locale)
+        {
+            return new DataResources.CharacterRaces(region, locale);
+        }
+
+        public DataResources.CharacterClasses Classes(string region, string locale)
+        {
+            return new DataResources.CharacterClasses(region, locale);
+        }
     }
 }

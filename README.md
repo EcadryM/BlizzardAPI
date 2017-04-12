@@ -1,5 +1,5 @@
 ## BlizzardAPI
-Class library written on C#/.NET Framework for getting information about a character/player in Blizzard Entertainment games
+Class library written on C#/.NET Framework for getting information from APIs in Blizzard Entertainment games.
 
 # Plans:
 1. WoW Community APIs - Working

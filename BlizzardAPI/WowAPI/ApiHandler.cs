@@ -29,6 +29,36 @@
             return new Quest.Quest(questId, region, locale);
         }
 
+        public Recipes.Recipe Recipe(string recipeId, string region, string locale)
+        {
+            return new Recipes.Recipe(recipeId, region, locale);
+        }
+
+        public DataResources.Battlegroups Battlegroups(string region, string locale)
+        {
+            return new DataResources.Battlegroups(region, locale);
+        }
+
+        public DataResources.CharacterRaces Races(string region, string locale)
+        {
+            return new DataResources.CharacterRaces(region, locale);
+        }
+
+        public DataResources.CharacterClasses Classes(string region, string locale)
+        {
+            return new DataResources.CharacterClasses(region, locale);
+        }
+
+        public DataResources.GuildPerks GuildPerks(string region, string locale)
+        {
+            return new DataResources.GuildPerks(region, locale);
+        }
+
+        public DataResources.PetsTypes PetsTypes(string region, string locale)
+        {
+            return new DataResources.PetsTypes(region, locale);
+        }
+      
         public Realms.Realms Realms(string region, string locale)
         {
             return new Realms.Realms(region, locale);

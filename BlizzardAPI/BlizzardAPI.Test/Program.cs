@@ -37,6 +37,7 @@ namespace BlizzardAPI.Test
             var races = api.Races("us", "en_US");
             var classes = api.Classes("us", "en_US");
             var guildPerks = api.GuildPerks("us", "en_US");
+            var petsTypes = api.PetsTypes("us", "en_US");
         }
     }
 }

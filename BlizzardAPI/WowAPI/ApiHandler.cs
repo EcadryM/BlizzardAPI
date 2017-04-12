@@ -53,5 +53,10 @@
         {
             return new DataResources.GuildPerks(region, locale);
         }
+
+        public DataResources.PetsTypes PetsTypes(string region, string locale)
+        {
+            return new DataResources.PetsTypes(region, locale);
+        }
     }
 }

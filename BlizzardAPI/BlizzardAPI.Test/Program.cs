@@ -8,7 +8,7 @@ namespace BlizzardAPI.Test
         {
             var api = new ApiHandler("Enter your api key here");
 
-            var character = api.Character("Siege", "Silvermoon", "eu", "en_GB");
+            var character = api.Character("Soul", "Medivh", "us", "en_US");
             var profile = character.Profile();
             var achievements = character.Achievements();
             var appearance = character.Appearance();
@@ -30,7 +30,7 @@ namespace BlizzardAPI.Test
             var leaderboards = api.Leaderboards("3v3", "us", "en_US");
 
             var quest = api.Quest("8625", "us", "en_US");
-
+          
             var recipe = api.Recipe("33994", "us", "en_US");
 
             var battlegroups = api.Battlegroups("us", "en_US");
@@ -38,6 +38,8 @@ namespace BlizzardAPI.Test
             var classes = api.Classes("us", "en_US");
             var guildPerks = api.GuildPerks("us", "en_US");
             var petsTypes = api.PetsTypes("us", "en_US");
+
+            var realms = api.Realms("us", "en_US");
         }
     }
 }

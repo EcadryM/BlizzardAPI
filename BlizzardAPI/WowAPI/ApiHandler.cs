@@ -58,5 +58,10 @@
         {
             return new DataResources.PetsTypes(region, locale);
         }
+      
+        public Realms.Realms Realms(string region, string locale)
+        {
+            return new Realms.Realms(region, locale);
+        }
     }
 }

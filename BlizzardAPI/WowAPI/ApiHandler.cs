@@ -48,5 +48,10 @@
         {
             return new DataResources.CharacterClasses(region, locale);
         }
+
+        public DataResources.GuildPerks GuildPerks(string region, string locale)
+        {
+            return new DataResources.GuildPerks(region, locale);
+        }
     }
 }

@@ -79,6 +79,9 @@
     <Compile Include="DataResources\CharacterClasses.cs" />
     <Compile Include="DataResources\CharacterRaces.cs" />
     <Compile Include="DataResources\CharacterRace.cs" />
+    <Compile Include="DataResources\GuildPerk.cs" />
+    <Compile Include="DataResources\GuildPerks.cs" />
+    <Compile Include="DataResources\GuildSpell.cs" />
     <Compile Include="Mounts\MountInfo.cs" />
     <Compile Include="Mounts\Mounts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

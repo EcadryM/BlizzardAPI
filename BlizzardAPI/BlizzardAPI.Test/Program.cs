@@ -40,6 +40,8 @@ namespace BlizzardAPI.Test
             var petsTypes = api.PetsTypes("us", "en_US");
 
             var realms = api.Realms("us", "en_US");
+
+            var auction = api.AuctionData("Medivh", "us", "en_US");
         }
     }
 }

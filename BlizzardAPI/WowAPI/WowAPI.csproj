@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ApiHandler.cs" />
     <Compile Include="ApiHelper.cs" />
+    <Compile Include="Auction\DataStatus.cs" />
     <Compile Include="Character\Achievements.cs" />
     <Compile Include="Character\Appearance.cs" />
     <Compile Include="Character\Boss.cs" />

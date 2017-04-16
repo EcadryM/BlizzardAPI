@@ -63,5 +63,10 @@
         {
             return new Realms.Realms(region, locale);
         }
+
+        public Auction.DataStatus AuctionData(string realm, string region, string locale)
+        {
+            return new Auction.DataStatus(realm, region, locale);
+        }
     }
 }

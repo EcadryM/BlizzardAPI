@@ -30,7 +30,7 @@ namespace BlizzardAPI.Test
             var leaderboards = api.Leaderboards("3v3", "us", "en_US");
 
             var quest = api.Quest("8625", "us", "en_US");
-          
+
             var recipe = api.Recipe("33994", "us", "en_US");
 
             var battlegroups = api.Battlegroups("us", "en_US");
@@ -42,6 +42,9 @@ namespace BlizzardAPI.Test
             var realms = api.Realms("us", "en_US");
 
             var auction = api.AuctionData("Medivh", "us", "en_US");
+
+            var bossList = api.BossList("us", "en_US");
+            var bossInfo = api.BossInfo("24723", "us", "en_US");
         }
     }
 }

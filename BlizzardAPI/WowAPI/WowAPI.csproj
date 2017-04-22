@@ -46,6 +46,10 @@
     <Compile Include="ApiHandler.cs" />
     <Compile Include="ApiHelper.cs" />
     <Compile Include="Auction\DataStatus.cs" />
+    <Compile Include="Boss\Boss.cs" />
+    <Compile Include="Boss\BossInfo.cs" />
+    <Compile Include="Boss\BossList.cs" />
+    <Compile Include="Boss\Npc.cs" />
     <Compile Include="Character\Achievements.cs" />
     <Compile Include="Character\Appearance.cs" />
     <Compile Include="Character\Boss.cs" />

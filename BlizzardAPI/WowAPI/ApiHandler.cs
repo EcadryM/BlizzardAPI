@@ -68,5 +68,15 @@
         {
             return new Auction.DataStatus(realm, region, locale);
         }
+
+        public Boss.BossList BossList(string region, string locale)
+        {
+            return new Boss.BossList(region, locale);
+        }
+
+        public Boss.BossInfo BossInfo(string bossId, string region, string locale)
+        {
+            return new Boss.BossInfo(bossId, region, locale);
+        }
     }
 }

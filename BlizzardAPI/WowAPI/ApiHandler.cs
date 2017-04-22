@@ -58,7 +58,7 @@
         {
             return new DataResources.PetsTypes(region, locale);
         }
-      
+
         public Realms.Realms Realms(string region, string locale)
         {
             return new Realms.Realms(region, locale);
@@ -77,6 +77,11 @@
         public Boss.BossInfo BossInfo(string bossId, string region, string locale)
         {
             return new Boss.BossInfo(bossId, region, locale);
+        }
+
+        public Guild.GuildInfo GuildInfo(string realm, string guildName, string region, string locale)
+        {
+            return new Guild.GuildInfo(realm, guildName, region, locale);
         }
     }
 }

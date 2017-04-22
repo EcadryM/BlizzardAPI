@@ -47,6 +47,7 @@ namespace BlizzardAPI.Test
             var bossInfo = api.BossInfo("24723", "us", "en_US");
 
             var guildInfo = api.GuildInfo("Medivh", "Distinct Advantage", "us", "en_US");
+            var guildMembers = api.GuildMembers("Medivh", "Distinct Advantage", "us", "en_US");
         }
     }
 }

@@ -49,7 +49,10 @@
     <Compile Include="Boss\Boss.cs" />
     <Compile Include="Boss\BossInfo.cs" />
     <Compile Include="Boss\BossList.cs" />
+    <Compile Include="Guild\Character.cs" />
+    <Compile Include="Guild\Member.cs" />
     <Compile Include="Boss\Npc.cs" />
+    <Compile Include="Guild\Spec.cs" />
     <Compile Include="Character\Achievements.cs" />
     <Compile Include="Character\Appearance.cs" />
     <Compile Include="Character\Boss.cs" />
@@ -91,6 +94,7 @@
     <Compile Include="DataResources\PetType.cs" />
     <Compile Include="Guild\Emblem.cs" />
     <Compile Include="Guild\GuildInfo.cs" />
+    <Compile Include="Guild\GuildMembers.cs" />
     <Compile Include="Mounts\MountInfo.cs" />
     <Compile Include="Mounts\Mounts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

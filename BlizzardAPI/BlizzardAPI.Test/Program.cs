@@ -49,6 +49,7 @@ namespace BlizzardAPI.Test
             var guildInfo = api.GuildInfo("Medivh", "Distinct Advantage", "us", "en_US");
             var guildMembers = api.GuildMembers("Medivh", "Distinct Advantage", "us", "en_US");
             var guildAchievements = api.GuildAchievements("Medivh", "Distinct Advantage", "us", "en_US");
+            var guildNews = api.GuildNews("Medivh", "Shattered Fates", "us", "en_US");
         }
     }
 }

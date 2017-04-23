@@ -49,11 +49,14 @@
     <Compile Include="Boss\Boss.cs" />
     <Compile Include="Boss\BossInfo.cs" />
     <Compile Include="Boss\BossList.cs" />
-    <Compile Include="Guild\Achievements.cs" />
+    <Compile Include="Guild\Achievement.cs" />
     <Compile Include="Guild\Character.cs" />
+    <Compile Include="Guild\Criterion.cs" />
     <Compile Include="Guild\GuildAchievements.cs" />
+    <Compile Include="Guild\GuildNews.cs" />
     <Compile Include="Guild\Member.cs" />
     <Compile Include="Boss\Npc.cs" />
+    <Compile Include="Guild\News.cs" />
     <Compile Include="Guild\Spec.cs" />
     <Compile Include="Character\Achievements.cs" />
     <Compile Include="Character\Appearance.cs" />

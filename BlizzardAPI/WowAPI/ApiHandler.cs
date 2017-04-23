@@ -93,5 +93,10 @@
         {
             return new Guild.GuildAchievements(realm, guildName, region, locale);
         }
+
+        public Guild.GuildNews GuildNews(string realm, string guildName, string region, string locale)
+        {
+            return new Guild.GuildNews(realm, guildName, region, locale);
+        }
     }
 }

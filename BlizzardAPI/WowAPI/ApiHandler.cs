@@ -88,5 +88,10 @@
         {
             return new Guild.GuildMembers(realm, guildName, region, locale);
         }
+
+        public Guild.GuildAchievements GuildAchievements(string realm, string guildName, string region, string locale)
+        {
+            return new Guild.GuildAchievements(realm, guildName, region, locale);
+        }
     }
 }

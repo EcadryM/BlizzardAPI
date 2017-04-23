@@ -8,7 +8,7 @@ namespace BlizzardAPI.Test
         {
             var api = new ApiHandler("Enter your api key here");
 
-            var character = api.Character("Soul", "Medivh", "us", "en_US");
+            var character = api.Character("Rubyslays", "Medivh", "us", "en_US");
             var profile = character.Profile();
             var achievements = character.Achievements();
             var appearance = character.Appearance();
@@ -48,6 +48,7 @@ namespace BlizzardAPI.Test
 
             var guildInfo = api.GuildInfo("Medivh", "Distinct Advantage", "us", "en_US");
             var guildMembers = api.GuildMembers("Medivh", "Distinct Advantage", "us", "en_US");
+            var guildAchievements = api.GuildAchievements("Medivh", "Distinct Advantage", "us", "en_US");
         }
     }
 }

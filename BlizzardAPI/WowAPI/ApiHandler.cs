@@ -118,5 +118,10 @@
         {
             return new Pet.PetSpecies(speciesID, region, locale);
         }
+
+        public Pet.PetStats PetStats(string speciesID, string level, string breedID, string qualityID, string region, string locale)
+        {
+            return new Pet.PetStats(speciesID, level, breedID, qualityID, region, locale);
+        }
     }
 }

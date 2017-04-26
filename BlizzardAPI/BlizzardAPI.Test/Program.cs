@@ -51,6 +51,9 @@ namespace BlizzardAPI.Test
             var guildAchievements = api.GuildAchievements("Medivh", "Distinct Advantage", "us", "en_US");
             var guildNews = api.GuildNews("Medivh", "Shattered Fates", "us", "en_US");
             var guildChallenge = api.GuildChallenge("Medivh", "Shattered Fates", "us", "en_US");
+
+            var petsList = api.PetsList("us", "en_US");
+            var petAbility = api.PetAbility("640", "us", "en_US");
         }
     }
 }

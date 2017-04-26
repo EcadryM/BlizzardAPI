@@ -9,7 +9,7 @@ namespace WowAPI.Guild
         public string Date { get; set; } 
         public string Fanction { get; set; }
         public bool IsRecurring { get; set; }
-        public List<Member> Members { get; set; } = new List<Member>();
+        public List<ChallegeMember> Members { get; set; } = new List<ChallegeMember>();
         public GuildInfo Guild { get; set; }
     }
 }

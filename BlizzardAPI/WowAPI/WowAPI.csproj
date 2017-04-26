@@ -112,6 +112,10 @@
     <Compile Include="Guild\GroupTime.cs" />
     <Compile Include="Mounts\MountInfo.cs" />
     <Compile Include="Mounts\Mounts.cs" />
+    <Compile Include="Pet\Pet.cs" />
+    <Compile Include="Pet\PetAbility.cs" />
+    <Compile Include="Pet\PetsList.cs" />
+    <Compile Include="Pet\Stats.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PvP\LeaderboardRow.cs" />
     <Compile Include="PvP\Leaderboards.cs" />

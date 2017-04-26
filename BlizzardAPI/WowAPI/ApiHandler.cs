@@ -103,5 +103,15 @@
         {
             return new Guild.GuildChallenge(realm, guildName, region, locale);
         }
+
+        public Pet.PetsList PetsList(string region, string locale)
+        {
+            return new Pet.PetsList(region, locale);
+        }
+
+        public Pet.PetAbility PetAbility(string abilityID, string region, string locale)
+        {
+            return new Pet.PetAbility(abilityID, region, locale);
+        }
     }
 }

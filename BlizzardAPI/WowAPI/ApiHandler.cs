@@ -98,5 +98,10 @@
         {
             return new Guild.GuildNews(realm, guildName, region, locale);
         }
+
+        public Guild.GuildChallenge GuildChallenge(string realm, string guildName, string region, string locale)
+        {
+            return new Guild.GuildChallenge(realm, guildName, region, locale);
+        }
     }
 }

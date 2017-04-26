@@ -113,5 +113,10 @@
         {
             return new Pet.PetAbility(abilityID, region, locale);
         }
+
+        public Pet.PetSpecies PetSpecies(string speciesID, string region, string locale)
+        {
+            return new Pet.PetSpecies(speciesID, region, locale);
+        }
     }
 }

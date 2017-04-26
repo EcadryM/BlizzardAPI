@@ -13,21 +13,21 @@
 
         public PetAbility(string abilityID, string region, string locale)
         {
-            var petsListData = ApiHelper.GetJsonFromUrl(
+            var petsAbilityData = ApiHelper.GetJsonFromUrl(
                 $"https://{region}.api.battle.net/wow/pet/ability/{abilityID}?locale={locale}&apikey={ApiHandler.ApiKey}"
             );
 
-            if (petsListData == null)
+            if (petsAbilityData == null)
                 return;
 
-            Id = petsListData["id"];
-            Name = petsListData["name"];
-            Icon = petsListData["icon"];
-            Cooldown = petsListData["cooldown"];
-            Rounds = petsListData["rounds"];
-            PetTypeId = petsListData["petTypeId"];
-            IsPassive = petsListData["isPassive"];
-            HideHints = petsListData["hideHints"];
+            Id = petsAbilityData["id"];
+            Name = petsAbilityData["name"];
+            Icon = petsAbilityData["icon"];
+            Cooldown = petsAbilityData["cooldown"];
+            Rounds = petsAbilityData["rounds"];
+            PetTypeId = petsAbilityData["petTypeId"];
+            IsPassive = petsAbilityData["isPassive"];
+            HideHints = petsAbilityData["hideHints"];
         }
     }
 }

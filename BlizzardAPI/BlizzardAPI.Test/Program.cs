@@ -8,7 +8,7 @@ namespace BlizzardAPI.Test
         {
             var api = new ApiHandler("Enter your api key here");
 
-            var character = api.Character("Soul", "Medivh", "us", "en_US");
+            var character = api.Character("Rubyslays", "Medivh", "us", "en_US");
             var profile = character.Profile();
             var achievements = character.Achievements();
             var appearance = character.Appearance();
@@ -30,7 +30,7 @@ namespace BlizzardAPI.Test
             var leaderboards = api.Leaderboards("3v3", "us", "en_US");
 
             var quest = api.Quest("8625", "us", "en_US");
-          
+
             var recipe = api.Recipe("33994", "us", "en_US");
 
             var battlegroups = api.Battlegroups("us", "en_US");
@@ -40,6 +40,17 @@ namespace BlizzardAPI.Test
             var petsTypes = api.PetsTypes("us", "en_US");
 
             var realms = api.Realms("us", "en_US");
+
+            var auction = api.AuctionData("Medivh", "us", "en_US");
+
+            var bossList = api.BossList("us", "en_US");
+            var bossInfo = api.BossInfo("24723", "us", "en_US");
+
+            var guildInfo = api.GuildInfo("Medivh", "Distinct Advantage", "us", "en_US");
+            var guildMembers = api.GuildMembers("Medivh", "Distinct Advantage", "us", "en_US");
+            var guildAchievements = api.GuildAchievements("Medivh", "Distinct Advantage", "us", "en_US");
+            var guildNews = api.GuildNews("Medivh", "Shattered Fates", "us", "en_US");
+            var guildChallenge = api.GuildChallenge("Medivh", "Shattered Fates", "us", "en_US");
         }
     }
 }

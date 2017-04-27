@@ -58,6 +58,8 @@ namespace BlizzardAPI.Test
             var petStats = api.PetStats("258", "40", "5", "4", "us", "en_US");
 
             var spell = api.Spell("8056", "us", "en_US");
+
+            var zoneList = api.ZoneList("us", "en_US");
         }
     }
 }

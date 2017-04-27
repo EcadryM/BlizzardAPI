@@ -127,6 +127,12 @@
         public Spell.Spell Spell(string spellID, string region, string locale)
         {
             return new Spell.Spell(spellID, region, locale);
+
         }
+        public Zone.ZoneList ZoneList(string region, string locale)
+        {
+            return new Zone.ZoneList(region, locale);
+        }
+
     }
 }

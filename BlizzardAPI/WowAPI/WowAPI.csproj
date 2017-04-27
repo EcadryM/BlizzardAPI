@@ -127,6 +127,9 @@
     <Compile Include="Realms\Realm.cs" />
     <Compile Include="Realms\Realms.cs" />
     <Compile Include="Spell\Spell.cs" />
+    <Compile Include="Zone\Location.cs" />
+    <Compile Include="Zone\Zone.cs" />
+    <Compile Include="Zone\ZoneList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

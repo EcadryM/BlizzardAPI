@@ -123,5 +123,19 @@
         {
             return new Pet.PetStats(speciesID, level, breedID, qualityID, region, locale);
         }
+
+        public Spell.Spell Spell(string spellID, string region, string locale)
+        {
+            return new Spell.Spell(spellID, region, locale);
+
+        }
+        public Zone.ZoneList ZoneList(string region, string locale)
+        {
+            return new Zone.ZoneList(region, locale);
+        }
+        public Zone.Zone ZoneInfo(string zoneID, string region, string locale)
+        {
+            return new Zone.Zone(zoneID, region, locale);
+        }
     }
 }

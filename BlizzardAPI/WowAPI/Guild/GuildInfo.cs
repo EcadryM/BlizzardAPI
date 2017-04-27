@@ -27,17 +27,7 @@
             Level = guildData["level"];
             Side = guildData["side"];
             AchievementPoints = guildData["achievementPoints"];
-            Emblem = new Emblem
-            {
-                Icon = guildData["emblem"]["icon"],
-                IconColor = guildData["emblem"]["iconColor"],
-                IconColorId = guildData["emblem"]["iconColorId"],
-                Border = guildData["emblem"]["border"],
-                BorderColor = guildData["emblem"]["borderColor"],
-                BorderColorId = guildData["emblem"]["borderColorId"],
-                BackgroundColor = guildData["emblem"]["backgroundColor"],
-                BackgroundColorId = guildData["emblem"]["backgroundColorId"]
-            };
+            Emblem = guildData["emblem"].ToObject<Emblem>();
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace WowAPI.Character
 {
@@ -21,31 +20,8 @@ namespace WowAPI.Character
                 professionsData["professions"]["secondary"] == null)
                 return;
 
-            for (var i = 0; i < (professionsData["professions"]["primary"] as JArray).Count; i++)
-            {
-                Primary.Add(new Profession
-                {
-                    Id = professionsData["professions"]["primary"][i]["id"],
-                    Rank = professionsData["professions"]["primary"][i]["rank"],
-                    Max = professionsData["professions"]["primary"][i]["max"],
-                    Name = professionsData["professions"]["primary"][i]["name"],
-                    Icon = professionsData["professions"]["primary"][i]["icon"],
-                    Recipes = professionsData["professions"]["primary"][i]["recipes"].ToObject<int[]>()
-                });
-            }
-
-            for (var i = 0; i < (professionsData["professions"]["secondary"] as JArray).Count; i++)
-            {
-                Secondary.Add(new Profession
-                {
-                    Id = professionsData["professions"]["secondary"][i]["id"],
-                    Rank = professionsData["professions"]["secondary"][i]["rank"],
-                    Max = professionsData["professions"]["secondary"][i]["max"],
-                    Name = professionsData["professions"]["secondary"][i]["name"],
-                    Icon = professionsData["professions"]["secondary"][i]["icon"],
-                    Recipes = professionsData["professions"]["secondary"][i]["recipes"].ToObject<int[]>()
-                });
-            }
+            Primary = professionsData["professions"]["primary"].ToObject<List<Profession>>();
+            Secondary = professionsData["professions"]["secondary"].ToObject<List<Profession>>();
         }
     }
 }

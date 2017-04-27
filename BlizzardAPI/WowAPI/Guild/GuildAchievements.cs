@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
-
-namespace WowAPI.Guild
+﻿namespace WowAPI.Guild
 {
     public class GuildAchievements : GuildInfo
     {
@@ -27,17 +25,7 @@ namespace WowAPI.Guild
             Level = guildAchievementsData["level"];
             Side = guildAchievementsData["side"];
             AchievementPoints = guildAchievementsData["achievementPoints"];
-            Emblem = new Emblem
-            {
-                Icon = guildAchievementsData["emblem"]["icon"],
-                IconColor = guildAchievementsData["emblem"]["iconColor"],
-                IconColorId = guildAchievementsData["emblem"]["iconColorId"],
-                Border = guildAchievementsData["emblem"]["border"],
-                BorderColor = guildAchievementsData["emblem"]["borderColor"],
-                BorderColorId = guildAchievementsData["emblem"]["borderColorId"],
-                BackgroundColor = guildAchievementsData["emblem"]["backgroundColor"],
-                BackgroundColorId = guildAchievementsData["emblem"]["backgroundColorId"]
-            };
+            Emblem = guildAchievementsData["emblem"].ToObject<Emblem>();
             AchievementsCompleted = guildAchievementsData["achievements"]["achievementsCompleted"].ToObject<int[]>();
             AchievementsCompletedTimestamp = guildAchievementsData["achievements"]["achievementsCompletedTimestamp"].ToObject<long[]>();
             Criteria = guildAchievementsData["achievements"]["criteria"].ToObject<int[]>();

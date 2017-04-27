@@ -18,6 +18,6 @@
         public bool IsThirdAbilitySlotSelected { get; set; }
         public bool CanBattle { get; set; }
 
-        public PetStats pStats;
+        public PetStats Stats;
     }
 }

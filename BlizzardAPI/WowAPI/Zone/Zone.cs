@@ -25,5 +25,39 @@ namespace WowAPI.Zone
         public List<Boss.Boss> Bosses { get => bosses; set => bosses = value; }
 
         private List<Boss.Boss> bosses = new List<Boss.Boss>();
+
+        public Zone(string zoneID, string region, string locale)
+        {
+            var zoneData = ApiHelper.GetJsonFromUrl(
+              $"https://{region}.api.battle.net/wow/zone/{zoneID}?locale={locale}&apikey={ApiHandler.ApiKey}"
+          );
+
+            if (zoneData == null)
+                return;
+
+            Id = zoneData["id"];
+            Name = zoneData["name"];
+            UrlSlug = zoneData["urlSlug"];
+            Description = zoneData["description"];
+            Location = new Location
+            {
+                Id = zoneData["location"]["id"],
+                Name = zoneData["location"]["name"]
+            };
+            ExpansionId = zoneData["expansionId"];
+            Patch = zoneData["patch"];
+            NumPlayers = zoneData["numPlayers"];
+            IsDungeon = zoneData["isDungeon"];
+            IsRaid = zoneData["isRaid"];
+            AdvisedMinLevel = zoneData["advisedMinLevel"];
+            AdvisedMaxLevel = zoneData["advisedMaxLevel"];
+            AdvisedHeroicMinLevel = zoneData["advisedHeroicMinLevel"];
+            AdvisedHeroicMaxLevel = zoneData["advisedHeroicMaxLevel"];
+            AvailableModes = zoneData["availableModes"].ToObject<string[]>();
+            LfgNormalMinGearLevel = zoneData["lfgNormalMinGearLevel"];
+            LfgHeroicMinGearLevel = zoneData["lfgHeroicMinGearLevel"];
+            Floors = zoneData["floors"];
+            Bosses = zoneData["bosses"].ToObject<List<Boss.Boss>>();
+        }
     }
 }

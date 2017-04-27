@@ -133,6 +133,9 @@
         {
             return new Zone.ZoneList(region, locale);
         }
-
+        public Zone.Zone ZoneInfo(string zoneID, string region, string locale)
+        {
+            return new Zone.Zone(zoneID, region, locale);
+        }
     }
 }

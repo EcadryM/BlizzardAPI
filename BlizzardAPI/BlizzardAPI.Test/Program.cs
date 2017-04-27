@@ -60,6 +60,7 @@ namespace BlizzardAPI.Test
             var spell = api.Spell("8056", "us", "en_US");
 
             var zoneList = api.ZoneList("us", "en_US");
+            var zoneInfo = api.ZoneInfo("4131", "us", "en_US");
         }
     }
 }

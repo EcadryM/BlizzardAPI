@@ -123,5 +123,10 @@
         {
             return new Pet.PetStats(speciesID, level, breedID, qualityID, region, locale);
         }
+
+        public Spell.Spell Spell(string spellID, string region, string locale)
+        {
+            return new Spell.Spell(spellID, region, locale);
+        }
     }
 }

@@ -56,6 +56,8 @@ namespace BlizzardAPI.Test
             var petAbility = api.PetAbility("640", "us", "en_US");
             var petSpecies = api.PetSpecies("258", "us", "en_US");
             var petStats = api.PetStats("258", "40", "5", "4", "us", "en_US");
+
+            var spell = api.Spell("8056", "us", "en_US");
         }
     }
 }

@@ -14,6 +14,16 @@
             return new Character.Character(name, realm, region, locale);
         }
 
+        public DataResources.DataResources DataResources(string region, string locale)
+        {
+            return new DataResources.DataResources(region, locale);
+        }
+
+        public Boss.Boss Boss(string region, string locale)
+        {
+            return new Boss.Boss(region, locale);
+        }
+
         public Mounts.Mounts Mounts(string region, string locale)
         {
             return new Mounts.Mounts(region, locale);
@@ -34,31 +44,6 @@
             return new Recipes.Recipe(recipeId, region, locale);
         }
 
-        public DataResources.Battlegroups Battlegroups(string region, string locale)
-        {
-            return new DataResources.Battlegroups(region, locale);
-        }
-
-        public DataResources.CharacterRaces Races(string region, string locale)
-        {
-            return new DataResources.CharacterRaces(region, locale);
-        }
-
-        public DataResources.CharacterClasses Classes(string region, string locale)
-        {
-            return new DataResources.CharacterClasses(region, locale);
-        }
-
-        public DataResources.GuildPerks GuildPerks(string region, string locale)
-        {
-            return new DataResources.GuildPerks(region, locale);
-        }
-
-        public DataResources.PetsTypes PetsTypes(string region, string locale)
-        {
-            return new DataResources.PetsTypes(region, locale);
-        }
-
         public Realms.Realms Realms(string region, string locale)
         {
             return new Realms.Realms(region, locale);
@@ -69,59 +54,14 @@
             return new Auction.DataStatus(realm, region, locale);
         }
 
-        public Boss.BossList BossList(string region, string locale)
+        public Guild.Guild Guild(string realm, string guildName, string region, string locale)
         {
-            return new Boss.BossList(region, locale);
+            return new Guild.Guild(realm, guildName, region, locale);
         }
 
-        public Boss.BossInfo BossInfo(string bossId, string region, string locale)
+        public Pet.Pet Pet(string region, string locale)
         {
-            return new Boss.BossInfo(bossId, region, locale);
-        }
-
-        public Guild.GuildInfo GuildInfo(string realm, string guildName, string region, string locale)
-        {
-            return new Guild.GuildInfo(realm, guildName, region, locale);
-        }
-
-        public Guild.GuildMembers GuildMembers(string realm, string guildName, string region, string locale)
-        {
-            return new Guild.GuildMembers(realm, guildName, region, locale);
-        }
-
-        public Guild.GuildAchievements GuildAchievements(string realm, string guildName, string region, string locale)
-        {
-            return new Guild.GuildAchievements(realm, guildName, region, locale);
-        }
-
-        public Guild.GuildNews GuildNews(string realm, string guildName, string region, string locale)
-        {
-            return new Guild.GuildNews(realm, guildName, region, locale);
-        }
-
-        public Guild.GuildChallenge GuildChallenge(string realm, string guildName, string region, string locale)
-        {
-            return new Guild.GuildChallenge(realm, guildName, region, locale);
-        }
-
-        public Pet.PetsList PetsList(string region, string locale)
-        {
-            return new Pet.PetsList(region, locale);
-        }
-
-        public Pet.PetAbility PetAbility(string abilityID, string region, string locale)
-        {
-            return new Pet.PetAbility(abilityID, region, locale);
-        }
-
-        public Pet.PetSpecies PetSpecies(string speciesID, string region, string locale)
-        {
-            return new Pet.PetSpecies(speciesID, region, locale);
-        }
-
-        public Pet.PetStats PetStats(string speciesID, string level, string breedID, string qualityID, string region, string locale)
-        {
-            return new Pet.PetStats(speciesID, level, breedID, qualityID, region, locale);
+            return new Pet.Pet(region, locale);
         }
 
         public Spell.Spell Spell(string spellID, string region, string locale)
@@ -129,13 +69,9 @@
             return new Spell.Spell(spellID, region, locale);
 
         }
-        public Zone.ZoneList ZoneList(string region, string locale)
+        public Zone.Zone Zone(string region, string locale)
         {
-            return new Zone.ZoneList(region, locale);
-        }
-        public Zone.Zone ZoneInfo(string zoneID, string region, string locale)
-        {
-            return new Zone.Zone(zoneID, region, locale);
+            return new Zone.Zone(region, locale);
         }
     }
 }

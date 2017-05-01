@@ -2,7 +2,7 @@
 
 namespace WowAPI.Boss
 {
-    public class BossInfo : Boss
+    public class BossInfo : BossFields
     {
         public BossInfo(string bossId, string region, string locale)
         {

@@ -47,8 +47,10 @@
     <Compile Include="ApiHelper.cs" />
     <Compile Include="Auction\DataStatus.cs" />
     <Compile Include="Boss\Boss.cs" />
+    <Compile Include="Boss\BossFields.cs" />
     <Compile Include="Boss\BossInfo.cs" />
     <Compile Include="Boss\BossList.cs" />
+    <Compile Include="DataResources\DataResources.cs" />
     <Compile Include="Guild\Achievement.cs" />
     <Compile Include="Guild\BronzeCriteria.cs" />
     <Compile Include="Guild\ChallegeMember.cs" />
@@ -57,6 +59,7 @@
     <Compile Include="Guild\Criterion.cs" />
     <Compile Include="Guild\GoldCriteria.cs" />
     <Compile Include="Guild\Group.cs" />
+    <Compile Include="Guild\Guild.cs" />
     <Compile Include="Guild\GuildAchievements.cs" />
     <Compile Include="Guild\GuildChallenge.cs" />
     <Compile Include="Guild\GuildNews.cs" />
@@ -114,6 +117,7 @@
     <Compile Include="Mounts\Mounts.cs" />
     <Compile Include="Pet\Ability.cs" />
     <Compile Include="Pet\Pet.cs" />
+    <Compile Include="Pet\PetFields.cs" />
     <Compile Include="Pet\PetAbility.cs" />
     <Compile Include="Pet\PetsList.cs" />
     <Compile Include="Pet\PetSpecies.cs" />
@@ -129,6 +133,7 @@
     <Compile Include="Spell\Spell.cs" />
     <Compile Include="Zone\Location.cs" />
     <Compile Include="Zone\Zone.cs" />
+    <Compile Include="Zone\ZoneInfo.cs" />
     <Compile Include="Zone\ZoneList.cs" />
   </ItemGroup>
   <ItemGroup>

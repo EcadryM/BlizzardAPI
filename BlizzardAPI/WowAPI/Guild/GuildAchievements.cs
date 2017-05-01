@@ -2,10 +2,10 @@
 {
     public class GuildAchievements : GuildInfo
     {
-        public int[] AchievementsCompleted { get; set; }
+        public long[] AchievementsCompleted { get; set; }
         public long[] AchievementsCompletedTimestamp { get; set; }
-        public int[] Criteria { get; set; }
-        public int[] CriteriaQuantity { get; set; }
+        public long[] Criteria { get; set; }
+        public long[] CriteriaQuantity { get; set; }
         public long[] CriteriaTimestamp { get; set; }
         public long[] CriteriaCreated { get; set; }
 
@@ -26,10 +26,10 @@
             Side = guildAchievementsData["side"];
             AchievementPoints = guildAchievementsData["achievementPoints"];
             Emblem = guildAchievementsData["emblem"].ToObject<Emblem>();
-            AchievementsCompleted = guildAchievementsData["achievements"]["achievementsCompleted"].ToObject<int[]>();
+            AchievementsCompleted = guildAchievementsData["achievements"]["achievementsCompleted"].ToObject<long[]>();
             AchievementsCompletedTimestamp = guildAchievementsData["achievements"]["achievementsCompletedTimestamp"].ToObject<long[]>();
-            Criteria = guildAchievementsData["achievements"]["criteria"].ToObject<int[]>();
-            CriteriaQuantity = guildAchievementsData["achievements"]["criteriaQuantity"].ToObject<int[]>();
+            Criteria = guildAchievementsData["achievements"]["criteria"].ToObject<long[]>();
+            CriteriaQuantity = guildAchievementsData["achievements"]["criteriaQuantity"].ToObject<long[]>();
             CriteriaTimestamp = guildAchievementsData["achievements"]["criteriaTimestamp"].ToObject<long[]>();
             CriteriaCreated = guildAchievementsData["achievements"]["criteriaCreated"].ToObject<long[]>();
         }

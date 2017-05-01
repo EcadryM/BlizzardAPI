@@ -4,8 +4,8 @@ namespace WowAPI.Boss
 {
     public class BossList
     {
-        private List<Boss> bosses = new List<Boss>();
-        public List<Boss> Bosses { get => bosses; set => bosses = value; }
+        private List<BossFields> bosses = new List<BossFields>();
+        public List<BossFields> Bosses { get => bosses; set => bosses = value; }
 
         public BossList(string region, string locale)
         {
@@ -16,7 +16,7 @@ namespace WowAPI.Boss
             if (bossListData == null)
                 return;
 
-            Bosses = bossListData["bosses"].ToObject<List<Boss>>();
+            Bosses = bossListData["bosses"].ToObject<List<BossFields>>();
         }
     }
 }

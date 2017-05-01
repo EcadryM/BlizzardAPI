@@ -14,84 +14,84 @@ namespace WowAPI.Character
             this.locale = locale;
         }
 
-        private object CreateNewInstance(Type type, string name)
+        private object CreateNewInstance(Type type)
         {
             return ApiHelper.CreateNewInstance(type, new object[] { this.name, realm, region, locale });
         }
 
         public Profile Profile()
         {
-            return CreateNewInstance(typeof(Profile), "profile") as Profile;
+            return CreateNewInstance(typeof(Profile)) as Profile;
         }
 
         public Achievements Achievements()
         {
-            return CreateNewInstance(typeof(Achievements), "achievements") as Achievements;
+            return CreateNewInstance(typeof(Achievements)) as Achievements;
         }
 
         public Appearance Appearance()
         {
-            return CreateNewInstance(typeof(Appearance), "appearance") as Appearance;
+            return CreateNewInstance(typeof(Appearance)) as Appearance;
         }
 
         public Guild Guild()
         {
-            return CreateNewInstance(typeof(Guild), "guild") as Guild;
+            return CreateNewInstance(typeof(Guild)) as Guild;
         }
 
         public Mounts Mounts()
         {
-            return CreateNewInstance(typeof(Mounts), "mounts") as Mounts;
+            return CreateNewInstance(typeof(Mounts)) as Mounts;
         }
 
         public HunterPets HunterPets()
         {
-            return CreateNewInstance(typeof(HunterPets), "hunterpets") as HunterPets;
+            return CreateNewInstance(typeof(HunterPets)) as HunterPets;
         }
 
         public Pets Pets()
         {
-            return CreateNewInstance(typeof(Pets), "pets") as Pets;
+            return CreateNewInstance(typeof(Pets)) as Pets;
         }
 
         public PetSlots PetSlots()
         {
-            return CreateNewInstance(typeof(PetSlots), "petslots") as PetSlots;
+            return CreateNewInstance(typeof(PetSlots)) as PetSlots;
         }
 
         public Professions Professions()
         {
-            return CreateNewInstance(typeof(Professions), "professions") as Professions;
+            return CreateNewInstance(typeof(Professions)) as Professions;
         }
 
         public PvP PvP()
         {
-            return CreateNewInstance(typeof(PvP), "pvp") as PvP;
+            return CreateNewInstance(typeof(PvP)) as PvP;
         }
 
         public Quests Quests()
         {
-            return CreateNewInstance(typeof(Quests), "quests") as Quests;
+            return CreateNewInstance(typeof(Quests)) as Quests;
         }
 
         public Reputation Reputation()
         {
-            return CreateNewInstance(typeof(Reputation), "reputation") as Reputation;
+            return CreateNewInstance(typeof(Reputation)) as Reputation;
         }
 
         public Stats Stats()
         {
-            return CreateNewInstance(typeof(Stats), "stats") as Stats;
+            return CreateNewInstance(typeof(Stats)) as Stats;
         }
 
         public Titles Titles()
         {
-            return CreateNewInstance(typeof(Titles), "titles") as Titles;
+            return CreateNewInstance(typeof(Titles)) as Titles;
         }
 
         public Progression Progression()
         {
-            return CreateNewInstance(typeof(Progression), "progression") as Progression;
+            return CreateNewInstance(typeof(Progression)) as Progression;
         }
     }
 }

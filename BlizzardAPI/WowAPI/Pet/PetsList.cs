@@ -4,9 +4,9 @@ namespace WowAPI.Pet
 {
     public class PetsList
     {
-        private List<Pet> pets = new List<Pet>();
+        private List<PetFields> pets = new List<PetFields>();
 
-        public List<Pet> Pets { get => pets; set => pets = value; }
+        public List<PetFields> Pets { get => pets; set => pets = value; }
 
         public PetsList(string region, string locale)
         {
@@ -17,7 +17,7 @@ namespace WowAPI.Pet
             if (petsListData == null)
                 return;
 
-            Pets = petsListData["pets"].ToObject<List<Pet>>();
+            Pets = petsListData["pets"].ToObject<List<PetFields>>();
         }
     }
 }

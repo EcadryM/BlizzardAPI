@@ -1,21 +1,35 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace WowAPI.Boss
 {
     public class Boss
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string UrlSlug { get; set; }
-        public string Description { get; set; }
-        public int ZoneId { get; set; }
-        public bool AvailableInNormalMode { get; set; }
-        public bool AvailableInHeroicMode { get; set; }
-        public int Health { get; set; }
-        public int HeroicHealth { get; set; }
-        public int Level { get; set; }
-        public int HeroicLevel { get; set; }
-        public int? JournalId { get; set; }
-        public List<Npc> Npcs { get; set; }
+        private readonly string region, locale;
+
+        public Boss(string region, string locale)
+        {
+            this.region = region;
+            this.locale = locale;
+        }
+
+        private object CreateNewInstance(Type type)
+        {
+            return ApiHelper.CreateNewInstance(type, new object[] { region, locale });
+        }
+
+        private object CreateNewInstance(Type type, string bossId)
+        {
+            return ApiHelper.CreateNewInstance(type, new object[] { bossId, region, locale });
+        }
+
+        public BossList BossList()
+        {
+            return CreateNewInstance(typeof(BossList)) as BossList;
+        }
+
+        public BossInfo BossInfo(string bossId)
+        {
+            return CreateNewInstance(typeof(BossInfo), bossId) as BossInfo;
+        }
     }
 }

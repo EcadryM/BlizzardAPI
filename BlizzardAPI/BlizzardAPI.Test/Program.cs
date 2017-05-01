@@ -12,7 +12,7 @@ namespace BlizzardAPI.Test
             var profile = character.Profile();
             var achievements = character.Achievements();
             var appearance = character.Appearance();
-            var guild = character.Guild();
+            var characterGuild = character.Guild();
             var characterMounts = character.Mounts();
             var hunterPets = character.HunterPets();
             var pets = character.Pets();
@@ -33,34 +33,40 @@ namespace BlizzardAPI.Test
 
             var recipe = api.Recipe("33994", "us", "en_US");
 
-            var battlegroups = api.Battlegroups("us", "en_US");
-            var races = api.Races("us", "en_US");
-            var classes = api.Classes("us", "en_US");
-            var guildPerks = api.GuildPerks("us", "en_US");
-            var petsTypes = api.PetsTypes("us", "en_US");
+            var dataResources = api.DataResources("us", "en_US");
+            var battlegroups = dataResources.Battlegroups();
+            var races = dataResources.CharacterRaces();
+            var classes = dataResources.CharacterClasses();
+            var guildPerks = dataResources.GuildPerks();
+            var petTypes = dataResources.PetTypes();
 
             var realms = api.Realms("us", "en_US");
 
             var auction = api.AuctionData("Medivh", "us", "en_US");
 
-            var bossList = api.BossList("us", "en_US");
-            var bossInfo = api.BossInfo("24723", "us", "en_US");
+            var boss = api.Boss("us", "en_US");
+            var bossList = boss.BossList();
+            var bossInfo = boss.BossInfo("24723");
 
-            var guildInfo = api.GuildInfo("Medivh", "Distinct Advantage", "us", "en_US");
-            var guildMembers = api.GuildMembers("Medivh", "Distinct Advantage", "us", "en_US");
-            var guildAchievements = api.GuildAchievements("Medivh", "Distinct Advantage", "us", "en_US");
-            var guildNews = api.GuildNews("Medivh", "Shattered Fates", "us", "en_US");
-            var guildChallenge = api.GuildChallenge("Medivh", "Shattered Fates", "us", "en_US");
 
-            var petsList = api.PetsList("us", "en_US");
-            var petAbility = api.PetAbility("640", "us", "en_US");
-            var petSpecies = api.PetSpecies("258", "us", "en_US");
-            var petStats = api.PetStats("258", "40", "5", "4", "us", "en_US");
+            var guild = api.Guild("Medivh", "Shattered Fates", "us", "en_US");
+            var guildInfo = guild.GuildInfo();
+            var guildMembers = guild.GuildMembers();
+            var guildAchievements = guild.GuildAchievements();
+            var guildNews = guild.GuildNews();
+            var guildChallenge = guild.GuildChallenge();
+
+            var pet = api.Pet("us", "en_US");
+            var petsList = pet.PetsList();
+            var petAbility = pet.PetAbility("640");
+            var petSpecies = pet.PetSpecies("258");
+            var petStats = pet.PetStats("258", "40", "5", "4");
 
             var spell = api.Spell("8056", "us", "en_US");
 
-            var zoneList = api.ZoneList("us", "en_US");
-            var zoneInfo = api.ZoneInfo("4131", "us", "en_US");
+            var zone = api.Zone("us", "en_US");
+            var zoneList = zone.ZoneList();
+            var zoneInfo = zone.ZoneInfo("4131");
         }
     }
 }

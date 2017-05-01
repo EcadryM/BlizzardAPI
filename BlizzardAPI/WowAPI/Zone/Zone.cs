@@ -1,63 +1,35 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace WowAPI.Zone
 {
     public class Zone
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string UrlSlug { get; set; }
-        public string Description { get; set; }
-        public Location Location { get; set; }
-        public int ExpansionId { get; set; }
-        public string Patch { get; set; }
-        public string NumPlayers { get; set; }
-        public bool IsDungeon { get; set; }
-        public bool IsRaid { get; set; }
-        public int AdvisedMinLevel { get; set; }
-        public int AdvisedMaxLevel { get; set; }
-        public int AdvisedHeroicMinLevel { get; set; }
-        public int AdvisedHeroicMaxLevel { get; set; }
-        public string[] AvailableModes { get; set; }
-        public int LfgNormalMinGearLevel { get; set; }
-        public int LfgHeroicMinGearLevel { get; set; }
-        public int Floors { get; set; }
-        public List<Boss.Boss> Bosses { get => bosses; set => bosses = value; }
+        private readonly string region, locale;
 
-        private List<Boss.Boss> bosses = new List<Boss.Boss>();
-
-        public Zone(string zoneID, string region, string locale)
+        public Zone(string region, string locale)
         {
-            var zoneData = ApiHelper.GetJsonFromUrl(
-              $"https://{region}.api.battle.net/wow/zone/{zoneID}?locale={locale}&apikey={ApiHandler.ApiKey}"
-          );
+            this.region = region;
+            this.locale = locale;
+        }
 
-            if (zoneData == null)
-                return;
+        private object CreateNewInstance(Type type)
+        {
+            return ApiHelper.CreateNewInstance(type, new object[] { region, locale });
+        }
 
-            Id = zoneData["id"];
-            Name = zoneData["name"];
-            UrlSlug = zoneData["urlSlug"];
-            Description = zoneData["description"];
-            Location = new Location
-            {
-                Id = zoneData["location"]["id"],
-                Name = zoneData["location"]["name"]
-            };
-            ExpansionId = zoneData["expansionId"];
-            Patch = zoneData["patch"];
-            NumPlayers = zoneData["numPlayers"];
-            IsDungeon = zoneData["isDungeon"];
-            IsRaid = zoneData["isRaid"];
-            AdvisedMinLevel = zoneData["advisedMinLevel"];
-            AdvisedMaxLevel = zoneData["advisedMaxLevel"];
-            AdvisedHeroicMinLevel = zoneData["advisedHeroicMinLevel"];
-            AdvisedHeroicMaxLevel = zoneData["advisedHeroicMaxLevel"];
-            AvailableModes = zoneData["availableModes"].ToObject<string[]>();
-            LfgNormalMinGearLevel = zoneData["lfgNormalMinGearLevel"];
-            LfgHeroicMinGearLevel = zoneData["lfgHeroicMinGearLevel"];
-            Floors = zoneData["floors"];
-            Bosses = zoneData["bosses"].ToObject<List<Boss.Boss>>();
+        private object CreateNewInstance(Type type, string zoneId)
+        {
+            return ApiHelper.CreateNewInstance(type, new object[] { zoneId, region, locale });
+        }
+
+        public ZoneList ZoneList()
+        {
+            return CreateNewInstance(typeof(ZoneList)) as ZoneList;
+        }
+
+        public ZoneInfo ZoneInfo(string zoneId)
+        {
+            return CreateNewInstance(typeof(ZoneInfo), zoneId) as ZoneInfo;
         }
     }
 }

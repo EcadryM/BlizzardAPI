@@ -4,8 +4,7 @@ namespace WowAPI.Zone
 {
     public class ZoneList
     {
-        private List<Zone> zones = new List<Zone>();
-        public List<Zone> Zones { get => zones; set => zones = value; }
+        public List<ZoneInfo> Zones { get; set; }
 
         public ZoneList(string region, string locale)
         {
@@ -16,7 +15,7 @@ namespace WowAPI.Zone
             if (zonesData == null)
                 return;
 
-            Zones = zonesData["zones"].ToObject<List<Zone>>();
+            Zones = zonesData["zones"].ToObject<List<ZoneInfo>>();
         }
     }
 }

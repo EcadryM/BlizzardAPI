@@ -73,5 +73,10 @@
         {
             return new Zone.Zone(region, locale);
         }
+
+        public Item.Item Item(string region, string locale)
+        {
+            return new Item.Item(region, locale);
+        }
     }
 }

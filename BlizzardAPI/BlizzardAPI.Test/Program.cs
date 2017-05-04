@@ -67,6 +67,10 @@ namespace BlizzardAPI.Test
             var zone = api.Zone("us", "en_US");
             var zoneList = zone.ZoneList();
             var zoneInfo = zone.ZoneInfo("4131");
+
+            var item = api.Item("us", "en_US");
+            var itemInfo = item.ItemInfo("18826");
+            var itemSet = item.ItemSet("1060");
         }
     }
 }

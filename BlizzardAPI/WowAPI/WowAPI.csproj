@@ -113,6 +113,16 @@
     <Compile Include="Guild\GuildInfo.cs" />
     <Compile Include="Guild\GuildMembers.cs" />
     <Compile Include="Guild\GroupTime.cs" />
+    <Compile Include="Item\BonusStat.cs" />
+    <Compile Include="Item\BonusSummary.cs" />
+    <Compile Include="Item\Damage.cs" />
+    <Compile Include="Item\Item.cs" />
+    <Compile Include="Item\ItemInfo.cs" />
+    <Compile Include="Item\ItemProperties.cs" />
+    <Compile Include="Item\ItemSet.cs" />
+    <Compile Include="Item\ItemSource.cs" />
+    <Compile Include="Item\SetBonus.cs" />
+    <Compile Include="Item\WeaponInfo.cs" />
     <Compile Include="Mounts\MountInfo.cs" />
     <Compile Include="Mounts\Mounts.cs" />
     <Compile Include="Pet\Ability.cs" />

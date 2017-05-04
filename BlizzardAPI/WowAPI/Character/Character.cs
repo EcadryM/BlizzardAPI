@@ -103,5 +103,10 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(Statistics)) as Statistics;
         }
+
+        public Talents Talents()
+        {
+            return CreateNewInstance(typeof(Talents)) as Talents;
+        }
     }
 }

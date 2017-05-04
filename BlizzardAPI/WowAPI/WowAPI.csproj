@@ -55,10 +55,14 @@
     <Compile Include="Character\Criterion.cs" />
     <Compile Include="Character\Feed.cs" />
     <Compile Include="Character\FeedProperties.cs" />
+    <Compile Include="Character\Spell.cs" />
     <Compile Include="Character\Statistic.cs" />
     <Compile Include="Character\Statistics.cs" />
     <Compile Include="Character\StatisticsPropetries.cs" />
     <Compile Include="Character\SubCategory.cs" />
+    <Compile Include="Character\SubTalent.cs" />
+    <Compile Include="Character\Talent.cs" />
+    <Compile Include="Character\Talents.cs" />
     <Compile Include="DataResources\DataResources.cs" />
     <Compile Include="Guild\Achievement.cs" />
     <Compile Include="Guild\BronzeCriteria.cs" />

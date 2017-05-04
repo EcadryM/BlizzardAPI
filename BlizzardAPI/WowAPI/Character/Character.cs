@@ -98,5 +98,10 @@ namespace WowAPI.Character
         {
             return CreateNewInstance(typeof(Feed)) as Feed;
         }
+
+        public Statistics Statistics()
+        {
+            return CreateNewInstance(typeof(Statistics)) as Statistics;
+        }
     }
 }

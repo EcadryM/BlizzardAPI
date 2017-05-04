@@ -25,6 +25,7 @@ namespace BlizzardAPI.Test
             var titles = character.Titles();
             var progression = character.Progression();
             var feed = character.Feed();
+            var statistics = character.Statistics();
 
             var mounts = api.Mounts("us", "en_US");
 

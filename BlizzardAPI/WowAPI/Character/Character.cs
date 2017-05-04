@@ -16,7 +16,7 @@ namespace WowAPI.Character
 
         private object CreateNewInstance(Type type)
         {
-            return ApiHelper.CreateNewInstance(type, new object[] { this.name, realm, region, locale });
+            return ApiHelper.CreateNewInstance(type, new object[] { name, realm, region, locale });
         }
 
         public Profile Profile()
@@ -92,6 +92,11 @@ namespace WowAPI.Character
         public Progression Progression()
         {
             return CreateNewInstance(typeof(Progression)) as Progression;
+        }
+
+        public Feed Feed()
+        {
+            return CreateNewInstance(typeof(Feed)) as Feed;
         }
     }
 }

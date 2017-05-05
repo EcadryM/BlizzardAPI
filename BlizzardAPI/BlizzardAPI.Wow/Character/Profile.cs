@@ -27,7 +27,8 @@ namespace BlizzardAPI.Wow.Character
                 $"https://{region}.api.battle.net/wow/character/{realm}/{name}?locale={locale}&apikey={ApiHandler.ApiKey}"
             );
 
-            if (profileData == null) return;
+            if (profileData == null)
+                return;
 
             LastModified = profileData["lastModified"];
 

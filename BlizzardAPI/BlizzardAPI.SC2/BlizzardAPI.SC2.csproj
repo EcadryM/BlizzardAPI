@@ -45,6 +45,21 @@
   <ItemGroup>
     <Compile Include="ApiHandler.cs" />
     <Compile Include="ApiHelper.cs" />
+    <Compile Include="Profile\Achievement.cs" />
+    <Compile Include="Profile\Achievements.cs" />
+    <Compile Include="Profile\Campaign.cs" />
+    <Compile Include="Profile\Career.cs" />
+    <Compile Include="Profile\Points.cs" />
+    <Compile Include="Profile\Portrait.cs" />
+    <Compile Include="Profile\ProfileInfo.cs" />
+    <Compile Include="Profile\Profile.cs" />
+    <Compile Include="Profile\Protoss.cs" />
+    <Compile Include="Profile\Rewards.cs" />
+    <Compile Include="Profile\Season.cs" />
+    <Compile Include="Profile\Stat.cs" />
+    <Compile Include="Profile\SwarmLevels.cs" />
+    <Compile Include="Profile\Terran.cs" />
+    <Compile Include="Profile\Zerg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

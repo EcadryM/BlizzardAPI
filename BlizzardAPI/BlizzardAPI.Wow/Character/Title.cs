@@ -1,0 +1,8 @@
+﻿namespace BlizzardAPI.Wow.Character
+{
+    public class Title
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+}

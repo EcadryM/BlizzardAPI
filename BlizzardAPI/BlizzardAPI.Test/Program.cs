@@ -1,4 +1,4 @@
-﻿using WowAPI;
+﻿using BlizzardAPI.Wow;
 
 namespace BlizzardAPI.Test
 {

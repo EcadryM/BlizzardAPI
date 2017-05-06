@@ -24,5 +24,10 @@ namespace BlizzardAPI.SC2.Profile
         {
             return CreateNewInstance(typeof(ProfileInfo)) as ProfileInfo;
         }
+
+        public Ladders Ladders()
+        {
+            return CreateNewInstance(typeof(Ladders)) as Ladders;
+        }
     }
 }

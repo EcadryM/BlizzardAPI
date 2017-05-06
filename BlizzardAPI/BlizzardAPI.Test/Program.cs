@@ -79,10 +79,11 @@
 
             #region BlizzardAPI.SC2
 
-            var sc2API = new SC2.ApiHandler("haj9jgf5zjqy79se4nfkv7258wzhvfw6");
+            var sc2API = new SC2.ApiHandler("Enter your api key here");
 
             var sc2Profile = sc2API.Profile("499484", "TheSkunk", "us", "1", "en_US");
             var sc2ProfileInfo = sc2Profile.ProfileInfo();
+            var sc2Ladders = sc2Profile.Ladders();
 
             #endregion
         }

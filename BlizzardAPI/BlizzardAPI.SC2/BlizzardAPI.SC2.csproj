@@ -49,8 +49,13 @@
     <Compile Include="Profile\Achievements.cs" />
     <Compile Include="Profile\Campaign.cs" />
     <Compile Include="Profile\Career.cs" />
+    <Compile Include="Profile\Character.cs" />
+    <Compile Include="Profile\CurrentSeason.cs" />
+    <Compile Include="Profile\Ladder.cs" />
+    <Compile Include="Profile\Ladders.cs" />
     <Compile Include="Profile\Points.cs" />
     <Compile Include="Profile\Portrait.cs" />
+    <Compile Include="Profile\PreviousSeason.cs" />
     <Compile Include="Profile\ProfileInfo.cs" />
     <Compile Include="Profile\Profile.cs" />
     <Compile Include="Profile\Protoss.cs" />

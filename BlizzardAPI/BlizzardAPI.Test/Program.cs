@@ -84,6 +84,7 @@
             var sc2Profile = sc2API.Profile("499484", "TheSkunk", "us", "1", "en_US");
             var sc2ProfileInfo = sc2Profile.ProfileInfo();
             var sc2Ladders = sc2Profile.Ladders();
+            var sc2MatchHistory = sc2Profile.MatchHistory();
 
             #endregion
         }

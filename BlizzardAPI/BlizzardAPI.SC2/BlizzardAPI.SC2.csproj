@@ -53,6 +53,8 @@
     <Compile Include="Profile\CurrentSeason.cs" />
     <Compile Include="Profile\Ladder.cs" />
     <Compile Include="Profile\Ladders.cs" />
+    <Compile Include="Profile\Match.cs" />
+    <Compile Include="Profile\MatchHistory.cs" />
     <Compile Include="Profile\Points.cs" />
     <Compile Include="Profile\Portrait.cs" />
     <Compile Include="Profile\PreviousSeason.cs" />

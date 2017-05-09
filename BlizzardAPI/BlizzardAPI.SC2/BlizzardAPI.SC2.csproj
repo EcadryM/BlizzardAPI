@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="ApiHandler.cs" />
     <Compile Include="ApiHelper.cs" />
+    <Compile Include="Ladder\Character.cs" />
+    <Compile Include="Ladder\Ladder.cs" />
+    <Compile Include="Ladder\LadderMember.cs" />
     <Compile Include="Profile\Achievement.cs" />
     <Compile Include="Profile\Achievements.cs" />
     <Compile Include="Profile\Campaign.cs" />

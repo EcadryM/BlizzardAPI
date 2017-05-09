@@ -86,6 +86,8 @@
             var sc2Ladders = sc2Profile.Ladders();
             var sc2MatchHistory = sc2Profile.MatchHistory();
 
+            var sc2Ladder = sc2API.Ladder("194163", "us", "en_US");
+
             #endregion
         }
     }

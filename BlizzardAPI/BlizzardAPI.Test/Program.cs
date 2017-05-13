@@ -86,6 +86,12 @@
             var sc2Ladders = sc2Profile.Ladders();
             var sc2MatchHistory = sc2Profile.MatchHistory();
 
+            var sc2Ladder = sc2API.Ladder("194163", "us", "en_US");
+
+            var sc2DataResources = sc2API.DataResources("us", "en_US");
+            var sc2Achievements = sc2DataResources.Achievements();
+            var sc2Rewards = sc2DataResources.Rewards();
+
             #endregion
         }
     }

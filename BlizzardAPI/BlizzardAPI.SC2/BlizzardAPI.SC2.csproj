@@ -35,6 +35,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +46,22 @@
   <ItemGroup>
     <Compile Include="ApiHandler.cs" />
     <Compile Include="ApiHelper.cs" />
+    <Compile Include="DataResources\Achievement.cs" />
+    <Compile Include="DataResources\Achievements.cs" />
+    <Compile Include="DataResources\Animation.cs" />
+    <Compile Include="DataResources\Category.cs" />
+    <Compile Include="DataResources\Child.cs" />
+    <Compile Include="DataResources\DataResources.cs" />
+    <Compile Include="DataResources\Icon.cs" />
+    <Compile Include="DataResources\Portrait.cs" />
+    <Compile Include="DataResources\ProtossDecal.cs" />
+    <Compile Include="DataResources\Rewards.cs" />
+    <Compile Include="DataResources\Skin.cs" />
+    <Compile Include="DataResources\TerranDecal.cs" />
+    <Compile Include="DataResources\ZergDecal.cs" />
+    <Compile Include="Ladder\Character.cs" />
+    <Compile Include="Ladder\Ladder.cs" />
+    <Compile Include="Ladder\LadderMember.cs" />
     <Compile Include="Profile\Achievement.cs" />
     <Compile Include="Profile\Achievements.cs" />
     <Compile Include="Profile\Campaign.cs" />

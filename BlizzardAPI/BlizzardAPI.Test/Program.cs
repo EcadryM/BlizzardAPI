@@ -90,6 +90,7 @@
 
             var sc2DataResources = sc2API.DataResources("us", "en_US");
             var sc2Achievements = sc2DataResources.Achievements();
+            var sc2Rewards = sc2DataResources.Rewards();
 
             #endregion
         }

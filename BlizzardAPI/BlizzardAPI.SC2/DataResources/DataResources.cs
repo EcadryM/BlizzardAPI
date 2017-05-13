@@ -21,5 +21,10 @@ namespace BlizzardAPI.SC2.DataResources
         {
             return CreateNewInstance(typeof(Achievements)) as Achievements;
         }
+
+        public Rewards Rewards()
+        {
+            return CreateNewInstance(typeof(Rewards)) as Rewards;
+        }
     }
 }

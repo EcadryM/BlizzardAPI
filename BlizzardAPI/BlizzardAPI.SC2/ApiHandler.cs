@@ -19,5 +19,10 @@
         {
             return new Ladder.Ladder(ladderId, region, locale);
         }
+
+        public DataResources.DataResources DataResources(string region, string locale)
+        {
+            return new DataResources.DataResources(region, locale);
+        }
     }
 }

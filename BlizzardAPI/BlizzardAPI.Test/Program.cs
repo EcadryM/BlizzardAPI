@@ -88,6 +88,9 @@
 
             var sc2Ladder = sc2API.Ladder("194163", "us", "en_US");
 
+            var sc2DataResources = sc2API.DataResources("us", "en_US");
+            var sc2Achievements = sc2DataResources.Achievements();
+
             #endregion
         }
     }

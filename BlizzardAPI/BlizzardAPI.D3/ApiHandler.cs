@@ -8,5 +8,10 @@
         {
             ApiKey = apiKey;
         }
+
+        public Profile.Profile Profile(string battleTag, string region, string locale)
+        {
+            return new Profile.Profile(battleTag, region, locale);
+        }
     }
 }

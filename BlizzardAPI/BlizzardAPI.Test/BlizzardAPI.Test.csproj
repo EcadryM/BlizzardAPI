@@ -49,6 +49,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BlizzardAPI.D3\BlizzardAPI.D3.csproj">
+      <Project>{dc7b934d-1a48-45a4-be89-61e61c9b3253}</Project>
+      <Name>BlizzardAPI.D3</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BlizzardAPI.SC2\BlizzardAPI.SC2.csproj">
       <Project>{92210e1f-fc2c-46d5-925d-b28c126785a7}</Project>
       <Name>BlizzardAPI.SC2</Name>

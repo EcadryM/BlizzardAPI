@@ -45,6 +45,15 @@
   <ItemGroup>
     <Compile Include="ApiHandler.cs" />
     <Compile Include="ApiHelper.cs" />
+    <Compile Include="Profile\Blacksmith.cs" />
+    <Compile Include="Profile\Hero.cs" />
+    <Compile Include="Profile\Profile.cs" />
+    <Compile Include="Profile\ProfileInfo.cs" />
+    <Compile Include="Profile\ProfileProperties.cs" />
+    <Compile Include="Profile\Specialization.cs" />
+    <Compile Include="Profile\Kills.cs" />
+    <Compile Include="Profile\Progression.cs" />
+    <Compile Include="Profile\TimePlayed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

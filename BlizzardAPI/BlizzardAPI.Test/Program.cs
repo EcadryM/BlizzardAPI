@@ -93,6 +93,15 @@
             var sc2Rewards = sc2DataResources.Rewards();
 
             #endregion
+
+            #region BlizzardAPI.D3
+
+            var d3API = new D3.ApiHandler("Enter your api key here");
+
+            var d3Profile = d3API.Profile("Thanatos-11376", "us", "en_US");
+            var d3ProfileInfo = d3Profile.ProfileInfo();
+            
+            #endregion
         }
     }
 }
